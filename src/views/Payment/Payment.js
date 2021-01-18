@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Payments = () => (
+export const Payment = () => (
   <div>
     <p>this is the payments site</p>
   </div>
