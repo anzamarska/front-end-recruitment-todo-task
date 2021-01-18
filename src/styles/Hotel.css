@@ -1,0 +1,44 @@
+.hotel__container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hotel__image {
+    margin: 0 2vw;
+    height: 10vw;
+    width: 10vw;
+    object-fit: contain;
+}
+
+.hotel__info{
+    width: 40vw;
+    background-color: aquamarine;
+}
+
+.hotel__title {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.hotel__subtitle {
+    font-size: 14px;
+}
+    
+.quantity__section{
+    background-color: pink;
+    width: 20vw;
+}
+
+.hotel__subtotalPrice{
+    padding-top: 6vw;
+    line-height: 100%;
+}
+
+.checkoutProduct__info > button {
+background: #f0c14b;
+border: 1px solid;
+margin-top: 10px;
+border-color: #a88734 #9c7e31 #846a29;
+color: #111;
+}
