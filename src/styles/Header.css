@@ -1,0 +1,32 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header__nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .header__home{
+    margin: 0 10vw;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .header__basket {
+    margin: 0 10vw;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
