@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Header.css";
-// import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -14,6 +14,7 @@ function Header() {
         </Link>
         <Link to="/payment">
             <div className="header__basket">
+                <ShoppingBasketIcon className="header__basketIcon"/>
                 <p> My Basket </p>
             </div>
         </Link>
