@@ -1,7 +1,8 @@
 import React from "react";
+import Form from "../../components/Form"
 
 export const Payment = () => (
   <div>
-    <p>this is the payments site</p>
+    <Form/>
   </div>
 );
