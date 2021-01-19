@@ -6,9 +6,9 @@
 
 .hotel__image {
     margin: 0 2vw;
-    height: 10vw;
     width: 10vw;
     object-fit: contain;
+    min-width: 150px;
 }
 
 .hotel__info{
