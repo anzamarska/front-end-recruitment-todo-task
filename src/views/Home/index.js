@@ -5,31 +5,29 @@ import Hotel from "../../components/Hotel";
 
 function Home(){
 
-  const [hotels, setHotels] = useState({hotels:""})
+  const [hotels, setHotels] = useState([])
 
   useEffect(() => {
       fetch('https://60058d6f75860e0017c5cc76.mockapi.io/id')
       .then( response => response.json())
       .then((data) => {
        
-          setHotels({
-              hotels: data
-          })
+          setHotels(data)
       })
       .catch( error => console.error(error));
   }, [] );
 
   return (      
-    console.log(hotels.hotels[0]),
+    console.log(hotels[0]),
     <div className="home">
       <div className="home__container">
-          {hotels.hotels.map((hotel)=>(
+          {hotels.map((hotel)=>(
             <Hotel
-              id={0}
+              key={hotel.name}
               name={hotel.name}
               price={hotel.price}
               image={hotel.image}
-              subtitle={hotel.description}
+              subtitle={hotel.subtitle}
             />
           ))}
       </div>

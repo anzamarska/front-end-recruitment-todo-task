@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Hotel.css";
 
-function Hotel({ id, image, name, price, subtitle }) {
+function Hotel({ image, name, price, subtitle }) {
 
   return (
     <div className="hotel__container">
