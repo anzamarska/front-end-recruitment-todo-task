@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Hotel.css";
 
-function Hotel({ image, name, price, subtitle }) {
+function Hotel({ image, name, price, subtitle, deleteHotel, totalPrice, setPrice }) {
+  const [nights, setNights] = useState(0)
+  const hotelPrice = price * nights
+
+  const increaseNights = () => {
+    setNights(nights + 1);
+    setPrice(totalPrice + Number(price))
+  }
+
+  const decreaseNights = () => {
+    if (nights > 0){
+      setNights(nights - 1)
+      setPrice(totalPrice - Number(price))
+    }
+  }
 
   return (
     <div className="hotel__container">
@@ -10,20 +24,19 @@ function Hotel({ image, name, price, subtitle }) {
         <p className="hotel__title">{name}</p>
         <p className="hotel__subtitle">{subtitle}</p>
         <p className="hotel__price">
-          {/* per night */}
-          <small>$</small>
           <strong>{price}</strong>
+          <small>$ per night</small>
         </p>
       </div>
       <div className="quantity__section">
-        <button className="button--delete">delete hotel</button>
-        <button className="button--decrease">-</button>
-        <p>0</p>
-        <button className="button--increase">+</button>
+        <button className="button--delete" onClick={()=>{deleteHotel(name)}}>delete hotel</button>
+        <button className="button--decrease" onClick={()=>{decreaseNights()}}>-</button>
+        <p>{nights}</p>
+        <button className="button--increase" onClick={()=>{increaseNights()}}>+</button>
       </div>
       <p className="hotel__subtotalPrice">
           <small>$</small>
-          <strong>{price}</strong>
+          <strong>{hotelPrice}</strong>
         </p>
     </div>
   );
