@@ -6,10 +6,15 @@ function Hotel({ image, name, price, subtitle, deleteHotel, totalPrice, setPrice
   const hotelPrice = price * nights
 
   const increaseNights = () => {
+<<<<<<< HEAD
     if (nights < 14){
       setNights(nights + 1);
       setPrice(totalPrice + Number(price))
     }
+=======
+    setNights(nights + 1);
+    setPrice(totalPrice + Number(price))
+>>>>>>> e5c0cf68c75ea99dd43c9751e5d39249a1942303
   }
 
   const decreaseNights = () => {
@@ -33,9 +38,16 @@ function Hotel({ image, name, price, subtitle, deleteHotel, totalPrice, setPrice
       <div className="quantity__section">
         <button className="button--delete" onClick={()=>{deleteHotel(name)}}>delete hotel</button>
         <button className="button--decrease" onClick={()=>{decreaseNights()}}>-</button>
+<<<<<<< HEAD
         <p className="hotel__amount">{nights}</p>
         <button className="button--increase" onClick={()=>{increaseNights()}}>+</button>
         <p className="hotel__subtotalPrice">
+=======
+        <p>{nights}</p>
+        <button className="button--increase" onClick={()=>{increaseNights()}}>+</button>
+      </div>
+      <p className="hotel__subtotalPrice">
+>>>>>>> e5c0cf68c75ea99dd43c9751e5d39249a1942303
           <small>$</small>
           <strong>{hotelPrice}</strong>
         </p>
