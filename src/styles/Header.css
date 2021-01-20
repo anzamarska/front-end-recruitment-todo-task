@@ -1,4 +1,5 @@
 .header {
+    padding: 0 21vw;
     height: 60px;
     display: flex;
     align-items: center;
@@ -12,9 +13,12 @@
     display: flex;
     justify-content: space-evenly;
   }
-  
+
+  .header__nav, a {
+    min-width: 20vw;
+  }
+
   .header__home{
-    margin: 0 10vw;
     font-size: 18px;
     font-weight: 700;
     display: flex;
@@ -23,7 +27,6 @@
   }
 
   .header__basket {
-    margin: 0 10vw;
     font-size: 18px;
     font-weight: 700;
     display: flex;

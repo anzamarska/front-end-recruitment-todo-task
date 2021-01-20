@@ -2,11 +2,12 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .hotel__image {
     margin: 0 2vw;
-    width: 10vw;
+    width: 16vw;
     object-fit: contain;
     min-width: 150px;
 }
@@ -27,10 +28,35 @@
     
 .quantity__section{
     background-color: pink;
-    width: 20vw;
+    width: 10vw;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 40% 20% 20%;
+}
+
+
+.button--delete{
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.button--decrease{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.button--increase{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.hotel__amount{
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
 }
 
 .hotel__subtotalPrice{
-    padding-top: 6vw;
-    line-height: 100%;
+    grid-column: 5;
+    grid-row: 3;
 }

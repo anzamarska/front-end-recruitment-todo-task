@@ -1,9 +1,11 @@
 export const initialState = {
-  basket: [],
-  totalPrice: [],
+  totalPrice: 0,
+  hotels: []
 };
 
-
+// export const getTotalPrice = (totalPrice) => {
+//   {totalPrice};
+// }
 // selector
 // export const getBasketTotal = (basket) =>
 //   basket?.reduce((amount, item) => item.price + amount, 0);
@@ -23,7 +25,30 @@ const reducer = (state, action) => {
         basket: [...state.basket, action.item],
         totalPrice: [Number(state.allPrice) + Number(action.item.price)],
       };
+    case "CHANGE_TOTAL_PRICE":
+      return {
+        ...state,
+        totalPrice: [state.totalPrice + action.price]
+      };
+
+       // const deleteHotel = (name) => {
+  //   setHotels({
+  //     items: hotels.filter((item) => {
+  //       console.log(item.name)
+  //       return item.name !== name;
+  //     }),
+ 
+  //   });
+  //   console.log("hotels", hotels);
+  // };
+
+
+    case "REMOVE_HOTEL":
+      return {
+        ...state,
+        hotels: []
       
+      }
     default:
       return state;
   }
