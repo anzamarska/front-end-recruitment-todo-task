@@ -83,7 +83,7 @@
     grid-row: 3;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 400px) {
     .hotel__container{
         display: block;
         width: 80vw;
