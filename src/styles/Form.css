@@ -1,15 +1,38 @@
-.form__container{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    /* justify-content: center; */
-    /* flex-wrap: wrap;  */
+.form{
+    margin: 10vh auto;
+    width: 60vw;
+    border: 1px solid black;
+    padding: 10vh 0;
 }
 
 .form__input{
-    /* display: inline-block; */
+    width: 60%;
+    height: 3vh;
+    margin: 1vh;
 }
 
 .form__text{
-    /* display: inline-block; */
+    float: left;
+    width: 30%;
+    text-align: center;
+    line-height: 2;
+}
+
+.form__button{
+    width: 10vw;
+    height: 5vw;
+    padding: 1vw 3vw;
+    margin: 8vh 8vw 0 45vw;
+    border: 0.1em solid black;
+    text-decoration: none;
+    font-weight: 300;
+    background: transparent;
+}
+
+.form__button:hover{
+    box-shadow: 0 4px 8px rgba(114, 114, 114);
+}
+
+.form__message{
+    padding: 5vh 7vw 0;
 }
