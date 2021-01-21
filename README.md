@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Front-end Recruitment Todo Task for Flymble.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## General info
+
+This project was written using React for the hiring process. The loading skeleton added to the application, which displayed one product, was created using react-loading-skeleton. More you can found here: https://github.com/dvtng/react-loading-skeleton. I also used: react-router-dom.
+
+It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Technologies
+
+Project is created with:
+*CSS5
+*HTML5
+*JavaScript
+*React (react-router-dom/react-loading-skeleton)
+
+## Deploying / Publishing
+
+https://hotel-flymble-app.netlify.app/
+
 
 ## Available Scripts
 
