@@ -82,3 +82,36 @@
     grid-column: 5;
     grid-row: 3;
 }
+
+@media screen and (min-width: 400px) {
+    .hotel__container{
+        display: block;
+        width: 80vw;
+        margin: 12vh auto;
+    }
+
+    .hotel__image {
+        width: 60vw;
+        margin: 0 10vw 6vh 10vw;
+    }
+
+    .hotel__title{
+        margin: 0 20vw;
+    }
+
+    .hotel__subtitle{
+        width: 70vw;
+    }
+
+    .quantity__section {
+      margin-left: 10vw;
+      width: 60vw;
+      height: 15vh;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows: 40% 20% 40% 0;
+    }
+
+    .hotel__price::after{
+        display: none;
+    }
+  }

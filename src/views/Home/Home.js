@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../../styles/Home.css";
 import Hotel from "../../components/Hotel";
 import TotalPrice from "../../components/TotalPrice";
 

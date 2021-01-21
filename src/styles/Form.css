@@ -36,3 +36,10 @@
 .form__message{
     padding: 5vh 7vw 0;
 }
+
+@media screen and (min-width: 400px){
+    .form{
+        width: 80%;
+        margin: 10vw;
+    }
+}
