@@ -1,1 +1,18 @@
-.totalPrice__container{}
+.totalPrice__container{
+    margin: 0 20vw 10vh 20vw;
+    text-align: right;
+}
+
+.totalPrice__buyButton{
+    padding: 1vw 3vw;
+    border: 0.1em solid black;
+    margin: 2vw 0;
+    text-decoration: none;
+    font-weight: 300;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.totalPrice__buyButton:hover{
+    box-shadow: 0 4px 8px rgba(114, 114, 114);
+}

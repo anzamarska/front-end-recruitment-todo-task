@@ -1,4 +1,15 @@
 .form__container{
-
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    /* justify-content: center; */
+    /* flex-wrap: wrap;  */
 }
 
+.form__input{
+    /* display: inline-block; */
+}
+
+.form__text{
+    /* display: inline-block; */
+}

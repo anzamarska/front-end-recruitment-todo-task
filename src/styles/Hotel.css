@@ -1,7 +1,7 @@
 .hotel__container {
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 8vh;
+    margin-bottom: 12vh;
     justify-content: center;
 }
 
@@ -14,7 +14,6 @@
 
 .hotel__info{
     width: 40vw;
-    background-color: aquamarine;
 }
 
 .hotel__title {
@@ -24,10 +23,22 @@
 
 .hotel__subtitle {
     font-size: 14px;
+    padding: 2vw 4vw;
+    text-align: justify;
 }
     
+.hotel__price {
+    padding: 0 4vw ;
+}
+
+.hotel__price::after{
+    content: "";
+    display: block;
+    padding-top: 4vh;
+    border-bottom: 1px solid #000;
+}
+
 .quantity__section{
-    background-color: pink;
     width: 10vw;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;

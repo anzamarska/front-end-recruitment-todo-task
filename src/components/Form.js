@@ -5,14 +5,14 @@ function Form() {
 
   return (
     <div className="form__container">
-        <p>Name:</p>  
-        <input/>
-        <p>Address:</p>  
-        <input/>  
-        <p>Phone:</p>  
-        <input/>
-        <p>E-mail:</p>  
-        <input/>
+        <p className="form__text">Name:</p>  
+        <input className="form__input"/>
+        <p className="form__text">Address:</p>  
+        <input className="form__input"/>  
+        <p className="form__text">Phone:</p>  
+        <input className="form__input"/>
+        <p className="form__text">E-mail:</p>  
+        <input className="form__input"/>
         <button>Pay</button>
     </div>
   );

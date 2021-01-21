@@ -19,11 +19,11 @@ function Home(){
   }, [] );
 
   const deleteHotel = (name) => {
-    setHotels({
-      hotels: hotels.filter((hotel)=>{
+    setHotels(
+     hotels.filter((hotel)=>{
         return hotel.name !== name;
-      }),
-    });
+     }),
+    );
   };
 
   return (
