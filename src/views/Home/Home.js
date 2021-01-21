@@ -41,6 +41,7 @@ function Home(){
               totalPrice={totalPrice}
             />
           ))}
+          <Hotel/>
           <TotalPrice totalPrice={totalPrice}/>
       </div>
     </div>

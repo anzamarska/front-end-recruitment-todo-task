@@ -19,6 +19,8 @@
 .hotel__title {
     font-size: 17px;
     font-weight: 800;
+    width: max-content;
+    min-width: 20vw;
 }
 
 .hotel__subtitle {
@@ -40,25 +42,34 @@
 
 .quantity__section{
     width: 10vw;
+    height: 10vw;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20% 40% 20% 20%;
 }
 
-
 .button--delete{
     grid-column: 5;
     grid-row: 1;
+    font-size: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    background: transparent;
 }
 
 .button--decrease{
     grid-column: 1;
     grid-row: 3;
+    font-size: 100%;
+    border: 2px solid rgb(0, 117, 0);
+    background: transparent;
 }
 
 .button--increase{
     grid-column: 3;
     grid-row: 3;
+    font-size: 100%;
+    border: 2px solid rgb(161, 25, 25);
+    background: transparent;
 }
 
 .hotel__amount{

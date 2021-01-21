@@ -14,7 +14,7 @@ const checkForm = (e) => {
 
   let formErrors = [];
   
-  if (inputName.value.length <= 3) {
+  if (inputName.value.length < 3) {
     formErrors.push("Please fill in the name field correctly, must be at least 3 characters long");
   }
   
